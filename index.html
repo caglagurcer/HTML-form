@@ -1,0 +1,49 @@
+<!DOCTYPE hmtl>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Cagla Gurcer</title>
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+  <h1 id="title">Cagla Gurcer's Form</h1>
+<p id="description">Thank you for taking the time to help and improve me</p>
+<form id="survey-form">
+  <div><label id="name-label" class="label-names">NAME</label>
+  <input id="name" type="text" required placeholder="Enter your Name"></div>
+  <div><label id="email-label" class="label-names">EMAIL</label>
+  <input id="email" type="email" required placeholder="Enter your Email"></div>
+  <div><label id="number-label" class="label-names">AGE(optional)</label>
+  <input id="number" type="number" min="13" max="50" placeholder="Age" ></div>
+  <div>
+    <p>Which option best describes your current role ?</p>
+  <select id="dropdown">
+    <option>Select one option</option>
+    <option>Student</option>
+    <option>Full Time Job</option>
+    <option>Prefer not to say</option>
+    <option>Other</option>
+  </select>
+  <div> 
+    <p>Would you recommend my projects to a friend ? </p>
+    <label> <input type="radio" value="Definitely" id="radio" name="radio-input">Definitely</label>
+    <label> <input type="radio" value="Maybe" id="radio" name="radio-input">Maybe</label>
+    <label> <input type="radio" value="Not-sure" id="radio" name="radio-input">Not sure</label>
+  </div>
+  <div>
+    <p>What kind of contents would you see on my website ?</p>
+    <label><input value="front-end" type="checkbox" class="inline">Front-end Projects</label>
+    <label><input value="back-end" type="checkbox" class="inline">Back-end Projects</label>
+    <label><input value="videos" type="checkbox" class="inline">Videos</label>
+    <label><input value="articles" type="checkbox" class="inline">Articles</label>
+  </div>
+  <hr>
+  <div>
+    <p>Any comments or suggestions?</p>
+    <textarea rows="6" cols="30" placeholder="Enter your comment here..." ></textarea>
+  </div>
+  <div><button type="submit" id="submit">Submit</button></div>
+</form>
+</body>
+</html>
